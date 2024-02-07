@@ -1,0 +1,85 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+#main{
+  width: 70%;
+  height: 100vh;
+  background-color: #111;
+  position: fixed;
+  top: 0px;
+  left: -70%;
+  overflow: hidden;
+}
+
+#mnu{
+  opacity: 0;
+  transition: all 1.7s;
+}
+
+#mnu ul{
+  list-style: none;
+  font-family: fantasy;
+  font-size: 30px;
+  color: white;
+  line-height: 60px;
+  letter-spacing: 5px;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 9999;
+  cursor: pointer;
+}
+/* menu-close icon */
+#icon{
+  position: fixed;
+  top: 50px;
+  right: 100px;
+  cursor: pointer;
+}
+#open,#close{
+  font-family: fantasy;
+  font-size: 18px;
+  color: #111;
+  letter-spacing: 2px;
+  transform: rotate(90deg);
+  pointer-events: none;
+  transition: all .5s;
+  -webkit-backface-visibility: hidden;
+}
+
+#close{
+  position: absolute;
+  top:0px;
+  left: 70px;
+  opacity: 0;
+}
+
+#line{
+  width: 5px;
+  height: 50px;
+  background-color: #111;
+  position: relative;
+  top:20px;
+  left: 20px;
+  transition: all .5s;
+}
+/* to keep link active */
+.active{
+  color: #F5AF1B;
+}
+/* below font */
+#bigFont{
+  font-family: fantasy;
+  font-size: 250px;
+  color: #F5AF1B;
+  letter-spacing: 50px;
+  opacity: .1;
+  position: absolute;
+  bottom: -120px;
+  left: -50px;
+  z-index: 9;
+}

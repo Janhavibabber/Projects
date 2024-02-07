@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Drop-down calculator</h2>
+
+<form action="/action_page.php">
+  <label for="op1">Operand 1:</label>
+  <select id="op1" name="op1">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  <label for="op">Operator:</label>
+  <select id="op" name="op">
+    <option value="add">+</option>
+    <option value="sub">-</option>
+    <option value="multi">*</option>
+    <option value="div">/</option>
+  </select>
+  <label for="op2">Operand 2:</label>
+  <select id="op2" name="op2">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  <label for="eq"> = </label>
+  <input type="text" class="ans">
+  <!-- <span class="ans"></span> -->
+  <br><br>
+  <input type = "button" onclick = "calc()" value = "Display">
+</form>
+<script type="text/javascript">
+    function calc()
+    {
+      // selectElement = document.querySelector('#op1');
+      // output = selectElement.value;
+      // document.querySelector('#ans').textContent = output;
+      var select = document.getElementById('op1');
+      var value = select.options[select.selectedIndex].value;
+      // document.querySelector('#ans').textContent = value;
+      if (option.id == "2")
+      {
+          document.getElementById("ans").value = option.text;
+      }
+      document.write(value);
+      // console.log(value);
+      // var ch ='B';
+      // var result;
+      // switch(grade){
+      // case 'A':
+      // result="A Grade";
+      // break;
+      // case 'B':
+      // result="B Grade";
+      // break;
+      // case 'C':
+      // result="C Grade";
+      // break;
+      // default:
+      // result="No Grade";
+      // }
+      // document.write(result);
+    }
+</script>
+</body>
+</html>
