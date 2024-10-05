@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Font Awesome/icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!--TweenMax-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style_hidden.css">
+
+    <title>Janhavi Babber</title>
+  </head>
+  <body>
+    <header class="primary-header">
+        <div id="bg-grid"></div>
+          <!---Menu Start------>
+          <div class="menu flex">
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only"></span>
+            </button>
+
+            <nav>
+              <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                  <a class="uppercase letter-spacing-2" href="#">
+                      <span aria-hidden="true">00</span>Home
+                  </a>
+                </li>
+
+                <li>
+                  <a class="uppercase letter-spacing-2" href="#about">
+                      <span aria-hidden="true">01</span>About
+                  </a>
+                </li>
+
+                <li>
+                  <a class="uppercase letter-spacing-2" href="#project">
+                      <span aria-hidden="true">02</span>Project
+                  </a>
+                </li>
+
+                <li>
+                  <a class="uppercase letter-spacing-2" href="#contact">
+                      <span aria-hidden="true">03</span>Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+          <!---Menu end------>
+
+          <!---Profile Card Start------>
+          <div class="picture-card">
+            <div class="card-image">
+              <img src="IMG/info3.jpg" alt="cartoon picture">
+            </div>
+            <div class="card-container">
+              Janhavi<br>Babber
+            </div>
+          </div>
+          <!---Profile Card end------>
+
+          <!---Download Resume Button------>
+          <section>
+              <h2 class="resume-text">Download-Resume-Download-Resume-</h2>
+              <a href="IMG/Resume.pdf">
+                <button class="resume-btn">
+                    <i class="fa fa-download"></i>
+                </button>
+              </a>
+          </section>
+      </header>
+
+      <!---About Section Start --->
+      <section class="about container" id="about">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h3 class="heading">ABOUT</h3>
+
+          </div>
+
+          <div class="col-12 col-md-8 my-data">
+            Hello<br>
+            I'm Janhavi Babber.<br>
+            I'm a 23 year old Software developer living in Noida, India.<br>
+            I have serious passion for UI effects, animations and creating intutive, dynamic user experiences. Due to my attention to detail, I am constantly absorbing ideas from everyday life.<br>
+
+              <div class="row mt-5">
+                <div class="col-12">
+                  <h4 class="sub-heading">EDUCATION</h4>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-md-6 education-box">
+                  <small>
+                    <h6>Master of Computer Application</h6>
+                    <small>
+                      2020 - 2022<br>
+                      Graphic Era Deemed to be University
+                    </small>
+                  </small>
+                </div>
+
+                <div class="col-12 col-md-6 education-box mt-3 mt-md-0">
+                  <small>
+                    <h6>Bachelor of Computer Application</h6>
+                    <small>
+                      2017 - 2020<br>
+                      College of Engineering Roorkee
+                    </small>
+                  </small>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-12">
+                  <h4 class="sub-heading">SKILLS</h4>
+                </div>
+              </div>
+
+              <div class="row skills-content">
+                <div class="col-6 col-sm-4 col-md-2">
+                  <div class="skill-box">
+                    <i class="fab fa-html5"></i>
+                    <br>
+                    HTML
+                  </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-2">
+                  <div class="skill-box">
+                    <i class="fab fa-css3-alt"></i>
+                    <br>
+                    CSS
+                  </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-2 mt-1 mt-md-0">
+                  <div class="skill-box">
+                    <i class="fab fa-js"></i>
+                    <br>
+                    JAVASCRIPT
+                  </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-2 mt-1 mt-md-0">
+                  <div class="skill-box">
+                    <i class="fab fa-java"></i>
+                    <br>
+                    JAVA
+                  </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-2 mt-1 mt-md-0">
+                  <div class="skill-box">
+                    <i class="fab fa-dev"></i>
+                    <br>
+                    C++
+                  </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-2 mt-1 mt-md-0">
+                  <div class="skill-box">
+                    <i class="fab fa-python"></i>
+                    <br>
+                    PYTHON
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-12">
+                    <h4 class="sub-heading">SOFT SKILLS</h4>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="skill-badge">Communication</div>
+                  <div class="skill-badge">Teamwork</div>
+                  <div class="skill-badge">Flexibility</div>
+                  <div class="skill-badge">Confidence</div>
+                  <div class="skill-badge">Problem Solving</div>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                  <div class="col-12">
+                    <h4 class="sub-heading">CONFERENCES & COURSES</h4>
+                  </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <small>
+                    <h6>Web Design for Everbody Specialization Course</h6>
+                    <small>
+                      Udemy.com -2020
+                    </small>
+                  </small>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <small>
+                    <h6>Front End Web Developer Learning Path</h6>
+                    <small>
+                      Udemy.com - 2019
+                    </small>
+                  </small>
+                </div>
+
+              </div>
+
+          </div>
+        </div>
+      </section>
+      <!---About Section End --->
+
+      <!---Project Section Start --->
+      <section class="work container" id="project">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h3 class="heading">PROJECT</h3>
+          </div>
+
+          <div class="col-12 col-md-8">
+            <div class="cursor"></div>
+            <div class="wrapper">
+              <div class="project-list">
+
+                <!---Project 0 --->
+                <div class="project project-0">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-12 col-md-1">
+                        <div class="project-number"><h3>00</h3></div>
+                      </div>
+                      <div class="col-12 col-md-11">
+                        <div class="project-title"><h1>SPOTIFY REDESIGN</h1></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 offset-md-1">
+                        <div class="project-categ"><h5>HTML - CSS - PHP -MySQL</h5></div>
+                      </div>
+                      <div class="col-2"><h5>2021</h5></div>
+                    </div>
+                    <div class="project-overlay"></div>
+                  </a>
+                </div>
+
+                <!---Project 1 --->
+                <div class="project project-1">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-12 col-md-1">
+                        <div class="project-number"><h3>01</h3></div>
+                      </div>
+                      <div class="col-12 col-md-11">
+                        <div class="project-title"><h1>SMART HOME AUTOMATION APP</h1></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 offset-md-1">
+                        <div class="project-categ"><h5>Android - Firebase</h5></div>
+                      </div>
+                      <div class="col-2"><h5>2020</h5></div>
+                    </div>
+                    <div class="project-overlay"></div>
+                  </a>
+                </div>
+
+                <!---Project 2 --->
+                <div class="project project-2">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-12 col-md-1">
+                        <div class="project-number"><h3>02</h3></div>
+                      </div>
+                      <div class="col-12 col-md-11">
+                        <div class="project-title"><h1>CAB LOCATOR WEBSITE</h1></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 offset-md-1">
+                        <div class="project-categ"><h5>HTML - CSS - Bootstrap</h5></div>
+                      </div>
+                      <div class="col-2"><h5>2020</h5></div>
+                    </div>
+                    <div class="project-overlay"></div>
+                  </a>
+                </div>
+
+                <!---Project 3 --->
+                <div class="project project-3">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-12 col-md-1">
+                        <div class="project-number"><h3>03</h3></div>
+                      </div>
+                      <div class="col-12 col-md-11">
+                        <div class="project-title"><h1>HOTEL BOOKING WEBSITE</h1></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 offset-md-1">
+                        <div class="project-categ"><h5>HTML - CSS - javascript - C# - SQL</h5></div>
+                      </div>
+                      <div class="col-2"><h5>2019</h5></div>
+                    </div>
+                    <div class="project-overlay"></div>
+                  </a>
+                </div>
+
+              </div>
+          </div>
+        </div>
+      </section>
+      <!---Project Section End --->
+
+      <!---Contact Section Start --->
+      <section class="contact container mb-3" id="contact">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h3 class="heading">CONTACT</h3>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="contact-msg">
+              Don't be shy, i don't bite!<br>
+              If you like my site, don't hesitate to <span class="contact-msg-highlight">reach out</span><br>
+              Let's <span class="contact-msg-highlight">Build Something</span> Together.
+            </div>
+
+              <div class="contact-form">
+                <div class="section-contact">
+                  <div class="row">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                      <div class="header-section">
+                        <h2 class="title">Get In Touch
+                          <span class="dot"></span>
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+
+
+                      <div class="form-contact">
+                        <form>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="single-input">
+                                <i class="fas fa-user"></i>
+                                <input type="text" name="name" placeholder="ENTER YOUR NAME"/>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div class="single-input">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" name="email" placeholder="ENTER YOUR EMAIL"/>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div class="single-input">
+                                <i class="fas fa-phone"></i>
+                                <input type="text" name="phonenumber" placeholder="ENTER YOUR PHONE NUMBER"/>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div class="single-input">
+                                <i class="fas fa-check"></i>
+                                <input type="text" name="subject" placeholder="ENTER YOUR SUBJECT"/>
+                              </div>
+                            </div>
+
+                            <div class="col-md-12">
+                              <div class="single-input">
+                                <i class="fas fa-comment-dots"></i>
+                                <textarea placeholder="ENTER YOUR MESSAGE"></textarea>
+                              </div>
+                            </div>
+
+                            <div class="col-md-12">
+                              <div class="single-input text-center">
+                                <input type="submit" name="submit" value="SEND MESSAGE">
+                              </div>
+                            </div>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+          <div class="col-12 col-md-2">
+            <div class="contact-details">
+              <img src="IMG/assests.jpeg" class="memoji"/>
+
+              <div class="contact-info">
+                <h5>Address</h5>
+                Hno. 730 Lane no.11,<br>
+                Ramnagar, Roorkee,<br>
+                Uttarakhand 247667
+              </div>
+
+              <div class="contact-info">
+                  <h5>Email</h5>
+                  janhavibabber@gmail.com
+              </div>
+
+              <div class="contact-info">
+                  <h5>Phone</h5>
+                  6398404358
+              </div>
+
+              <div class="contact-social">
+                  <a href="https://github.com/Janhavibabber"><i class="fab fa-github"></i></a>
+                  <a href="www.linkedin.com/in/janhavi-babbar"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-skype"></i></a>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+      <!---Contact Section End --->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!--Custom JS---->
+    <script type="text/javascript" src="main_hidden.js"></script>
+    <script type="text/javascript" src="secure.js"></script>
+
+  </body>
+</html>
