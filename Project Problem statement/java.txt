@@ -1,0 +1,187 @@
+SQL to check no. of tables in a datatbase: 
+USE MyDatabase
+SELECT COUNT(*)
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE'
+
+SELECT COUNT(*)
+FROM sys.tables
+
+USE databasename;
+SHOW TABLES;
+SELECT FOUND_ROWS();
+
+SELECT Count(*)
+FROM <DATABASE_NAME>.INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE'
+
+Oracle: select*from tabs;
+
+class Emp
+{​​​
+int age;
+}​​​
+class Student
+{​​​
+String name;
+}​​​
+class A1 implements Runnable
+{​​​
+Student s1;
+Emp e1;
+A1(Emp e, Student s)
+{​​​
+e1 = e;
+s1 = s;
+}​​​
+public void run()
+{​​​
+synchronized(e1)
+{​​​
+System.out.println("Got a lock on Emp...");
+try {​​​
+Thread.sleep(1000);
+}​​​ catch (InterruptedException e) {​​​
+e.printStackTrace();
+}​​​
+synchronized(s1)
+{​​​
+System.out.println("Got a lock on student...");
+}​​​
+}​​​
+}​​​
+}​​​
+class A2 implements Runnable
+{​​​
+Student s1;
+Emp e1;
+A2(Emp e, Student s)
+{​​​
+e1 = e;
+s1 = s;
+}​​​
+public void run()
+{​​​
+synchronized(s1)
+{​​​
+System.out.println("Got a lock on student...");
+try {​​​
+Thread.sleep(1000);
+}​​​ catch (InterruptedException e) {​​​
+e.printStackTrace();
+}​​​
+synchronized(e1)
+{​​​
+System.out.println("Got a lock on emp...");
+}​​​
+}​​​
+}​​​
+}​​​
+public class DL1 {​​​
+ public static void main(String[] args) {​​​
+ Emp e1 = new Emp();
+Student s1 = new Student();
+A1 obj1 = new A1(e1, s1);
+A2 obj2 = new A2(e1, s1);
+Thread t1 = new Thread(obj1);
+Thread t2 = new Thread(obj2);
+t1.start();
+t2.start();
+}​​​
+}​​​
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package a1;
+
+
+class Emp
+{
+int age;
+}
+
+class Student
+{
+String name;
+}
+
+class A1 implements Runnable
+{
+Student s1;
+Emp e1;
+A1(Emp e, Student s)
+{
+e1 = e;
+s1 = s;
+}
+public void run()
+{
+synchronized(e1)
+{
+System.out.println("Got a lock on Emp...");
+try {
+Thread.sleep(1000);
+} catch (InterruptedException e) {
+e.printStackTrace();
+}
+synchronized(s1)
+{
+System.out.println("Got a lock on student...");
+}
+}
+}
+}
+
+class A2 implements Runnable
+{
+Student s1;
+Emp e1;
+A2(Emp e, Student s)
+{
+e1 = e;
+s1 = s;
+}
+public void run()
+{
+synchronized(s1)
+{
+System.out.println("Got a lock on student...");
+try {
+Thread.sleep(1000);
+} catch (InterruptedException e) {
+e.printStackTrace();
+}
+synchronized(e1)
+{
+System.out.println("Got a lock on emp...");
+}
+}
+}
+}
+
+public class DL1 {
+
+ public static void main(String[] args) {
+
+ Emp e1 = new Emp();
+Student s1 = new Student();
+A1 obj1 = new A1(e1, s1);
+A2 obj2 = new A2(e1, s1);
+Thread t1 = new Thread(obj1);
+Thread t2 = new Thread(obj2);
+t1.start();
+t2.start();
+}
+
+}
